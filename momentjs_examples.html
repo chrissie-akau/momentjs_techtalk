@@ -12,23 +12,23 @@
         // 1) current local time moment object
         console.log(moment())
 
-        //2) current local time using .toString method
+        //2) parsing - current local time using .toString method
             const time = moment()
 
-            // console.log(time.toString())
+            console.log(time.toString())
 
         //3) get method, "quarter", "year"
-            // console.log(time.get("year"))
+            console.log(time.get("year"))
 
         //4) format with locale token - American English
-            // console.log(time.format("L"))
+            console.log(time.format("L"))
         
         //5) Square brackets and tokens
-            // console.log(time.format("[Today is] dddd [and the year is] YYYY [aka The Year Of The Apocalypse]."))
+            console.log(time.format("[Today is] dddd [and the year is] YYYY [aka The Year Of The Apocalypse]."))
 
         //6) Calendar Time
-            // const lateLunchTime = moment().add(1, "h")
-            // console.log(lateLunchTime.calendar()) 
+            const lateLunchTime = moment().add(1, "hour")
+            console.log(lateLunchTime.calendar()) 
 
     </script>
 </body>
