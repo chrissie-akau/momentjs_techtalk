@@ -8,9 +8,22 @@
 <body>
     <h1>Moment.js Tech Talk Presentation</h1>
     <script src="javascript/moment.min.js"></script>
-    
     <script>
-        //current local time
-        console.log(moment())
+        // 1) current local time moment object
+        // console.log(moment())
+
+        //2) current local time using .toString method
+            const time = moment()
+
+            // console.log(time.toString())
+
+        //3) get method, "quarter", "year"
+            // console.log(time.get("year"))
+
+        //4) format with locale token - American English
+            // console.log(time.format("L"))
+        
+        //5) Square brackets and tokens
+            console.log(time.format("[Today is] dddd [and the year is] YYYY [aka The Apocalypse]."))
     </script>
 </body>
