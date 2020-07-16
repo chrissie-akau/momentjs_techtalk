@@ -10,7 +10,7 @@
     <script src="javascript/moment.min.js"></script>
     <script>
         // 1) current local time moment object
-        // console.log(moment())
+        console.log(moment())
 
         //2) current local time using .toString method
             const time = moment()
@@ -24,6 +24,12 @@
             // console.log(time.format("L"))
         
         //5) Square brackets and tokens
-            console.log(time.format("[Today is] dddd [and the year is] YYYY [aka The Apocalypse]."))
+            // console.log(time.format("[Today is] dddd [and the year is] YYYY [aka The Year Of The Apocalypse]."))
+
+        //6) Calendar Time
+            // const lateLunchTime = moment().add(1, "h")
+            // console.log(lateLunchTime.calendar()) 
+
     </script>
 </body>
+
